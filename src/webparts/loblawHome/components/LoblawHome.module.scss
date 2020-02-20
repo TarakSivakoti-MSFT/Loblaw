@@ -1,0 +1,92 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.loblawHome {
+  .nav {
+    background: linear-gradient(107deg, rgba(187, 187, 187, 1) 0%, rgba(255, 255, 255, 1) 140%);
+    color: white;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  // .logo {
+  //   background-image: url("../imgs/logo.png");
+  //   background-repeat: no-repeat;
+  //   height: 100px;
+  //   width: auto;
+  // }
+  .logo {
+    width: auto;
+    height: 40px;
+    margin-left: 55%;
+  }
+  .fancyborder {
+    border-top: 5px solid;
+    border-image: linear-gradient(
+        to right,
+        red 25%,
+        rgb(118, 118, 238) 25%,
+        rgb(118, 118, 238) 60%,
+        orange 25%,
+        orange 75%
+      )
+      5;
+  }
+  .btlink {
+    color: black;
+    &:hover {
+      text-decoration: none !important;
+      color: gray;
+    }
+    &:focus {
+      text-decoration: none !important;
+    }
+  }
+  .car:hover {
+    border: 2px solid;
+    cursor: pointer;
+  }
+
+  .car:after {
+    content: " ";
+    position: absolute;
+    right: -15px;
+    top: 25px;
+    border-top: 15px solid transparent;
+    border-right: none;
+    border-left: 15px solid black;
+    border-bottom: 15px solid transparent;
+  }
+  .img1,
+  .img2 {
+    background-image: url("https://res.cloudinary.com/enjoymovie/image/upload/w_256,h_256,c_fill,g_auto:faces/ea4yajwjylmpazplbcpg.jpg");
+    width: auto;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+  .img2 {
+    width: auto;
+    height: 255px;
+    background-repeat: no-repeat;
+  }
+  .cb {
+    padding: 0.3rem;
+  }
+  .ch {
+    padding: 0.2rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    .nav {
+      font-size: xx-large;
+      height: 80px;
+    }
+    .logo {
+      margin-left: 20%;
+      height: 30px;
+    }
+  }
+}
