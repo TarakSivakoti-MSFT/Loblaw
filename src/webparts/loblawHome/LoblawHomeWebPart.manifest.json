@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "86327e84-f19f-473c-a4a1-45930daecf44",
+  "alias": "LoblawHomeWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsTab"],
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+      "group": { "default": "Other" },
+      "title": { "default": "loblaw-home" },
+      "description": { "default": "Deals with Flip" },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "loblaw-home"
+      }
+    }
+  ]
+}

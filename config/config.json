@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "loblaw-home-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/loblawHome/LoblawHomeWebPart.js",
+          "manifest": "./src/webparts/loblawHome/LoblawHomeWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LoblawHomeWebPartStrings": "lib/webparts/loblawHome/loc/{locale}.js"
+  }
+}
